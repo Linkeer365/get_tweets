@@ -226,3 +226,182 @@ IPDL protocol error: Handler returned error code!
 ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
 
 1620595784616	Marionette	INFO	Stopped listening on port 1803
+1620654827250	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "--proxy-server=http:127.0.0.1:10087" "-foreground" "-no-remote" "-profile" "C:\\Users\\linsi\\AppData\\Local\\Temp\\rust_mozprofile.kQYO5GLYW0E3"
+1620654828443	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620654831461	Marionette	INFO	Listening on port 1498
+1620654831590	Marionette	WARN	TLS certificate errors will be ignored for this session
+1620654860078	Marionette	INFO	Stopped listening on port 1498
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620654879544	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "--proxy-server=http:127.0.0.1:10087" "-foreground" "-no-remote" "-profile" "C:\\Users\\linsi\\AppData\\Local\\Temp\\rust_mozprofile.64ACwO3fMZNT"
+1620654880063	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620654883006	Marionette	INFO	Listening on port 1631
+1620654883228	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://twitter.com/login, line 131: ChunkLoadError: Loading chunk 279 failed.
+(error: https://abs.twimg.com/responsive-web/client-web/ondemand.emoji.zh.f3ce7f75.js)
+1620654978539	Marionette	INFO	Stopped listening on port 1631
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620654988221	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "--proxy-server=http:127.0.0.1:10087" "-foreground" "-no-remote" "-profile" "C:\\Users\\linsi\\AppData\\Local\\Temp\\rust_mozprofile.XYj3Q7LkKdT5"
+1620654988777	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620654991411	Marionette	INFO	Listening on port 1817
+1620654991921	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://twitter.com/login, line 131: ChunkLoadError: Loading chunk 279 failed.
+(error: https://abs.twimg.com/responsive-web/client-web/ondemand.emoji.zh.f3ce7f75.js)
+1620655241650	Marionette	INFO	Stopped listening on port 1817
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1620655299221	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "--proxy-server=http:127.0.0.1:10087" "-foreground" "-no-remote" "-profile" "C:\\Users\\linsi\\AppData\\Local\\Temp\\rust_mozprofile.BxUrWmb8GG2X"
+1620655299759	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620655301597	Marionette	INFO	Listening on port 2074
+1620655301938	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://twitter.com/login, line 131: ChunkLoadError: Loading chunk 279 failed.
+(error: https://abs.twimg.com/responsive-web/client-web/ondemand.emoji.zh.f3ce7f75.js)
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec28381ac0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec26c7c400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec451df740 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec26c7e000 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec260f0580 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec262c4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec43435200 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec294cd000 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec29c3ee40 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec294cd000 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec288c52e0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec282d6000 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec29ddd660 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec282d8000 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec3b76cac0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec28b74c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec3e894900 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec2824a400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec285f8ac0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec3b772c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec29830740 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec46dd6400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec293a62e0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec46dd6400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec45a5b580 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec280e8400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec27fa19e0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec294b1400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec2a112120 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec294b1400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec800a3e40 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec7fec4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec7fbe6740 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec80a38400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec271fed60 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec80a38400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec2712f200 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec80a38400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec25d282e0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec807eb400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec27d10d60 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec262c5000 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec25595ac0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec262cbc00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec28674f20 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec29e91400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec290123c0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec29e91400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec27831820 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25decc00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec290134a0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec26c7dc00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec3b4d6040 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec3342a400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec317d2ac0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec3342a400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec2a6373c0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec3342a400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec3589d660 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec3342a400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec358d13c0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec3342a400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec358d13c0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec3342a400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec3b44e120 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec282d1c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec283102e0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec280e1800 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec28380ac0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec280e1800 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec28d16580 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec27c7b800 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec29013ba0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec280e7400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec46b37660 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec29ea3400 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec2712fd60 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25de4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec271fec80 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25de4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec2712fac0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25de4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec25d28f20 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25de4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec27d2e2e0 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25de4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec27831200 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25de4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec278e0740 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25de4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+[Child 9892, MediaDecoderStateMachine #1] WARNING: 1ec27d2e200 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:323
+[Child 9892, MediaDecoderStateMachine #1] WARNING: Decoder=1ec25de4c00 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:3904
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6B0027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+1620675200204	Marionette	INFO	Stopped listening on port 2074
