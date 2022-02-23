@@ -103,16 +103,16 @@ lines=[]
 date_len=len("Jan 23, 2022")
 for node in nodes:
     text=node.text
-    href=node.find_element_by_xpath("//a[@target='_blank']").get_attribute("href")
+    href=node.find_element_by_xpath("./a[@target='_blank']").get_attribute("href")
     date=text.strip()[-date_len:]
     text=text.strip()[:-date_len]
     line="{}\t{}\t{}".format(text,date,href)
     # tup=(text,date,href)
     lines.append(line)
-    # print("---")
-    # print(text)
-    # print(href)
-    # print("---")
+    print("---")
+    print(text)
+    print(href)
+    print("---")
 
 lines_s="\n".join(lines)
 
