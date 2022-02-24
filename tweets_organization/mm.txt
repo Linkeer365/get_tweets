@@ -1,0 +1,33 @@
+<li>明天看看能不能发一下这个推文整理的流程文档或者视频。
+小事还是要仔细做的，毕竟大事也轮不到我做。 <a target="_blank" href="https://twitter.com/ultramarine471/status/1496525936484917277"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>大概就是这样，不过各位还是掌握好markup各自的解析规则比较好，也可以两种都学。 <a href="http://t.co/QTYyuQuNQS" class="linkified" target="_blank">https://t.co/QTYyuQuNQS</a> <a target="_blank" href="https://twitter.com/ultramarine471/status/1496515491212505092"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>应该可以。
+1.  复制主单元
+2. 把主单元复制出来后，再用这个`&lt;li&gt;(.*?)&lt;a.*href="(.*?)"&gt; &lt;span class="grey"&gt;(.*?)&lt;/span&gt;.*&lt;/a&gt;&lt;/li&gt;`
+2. $1,$2,$3分别代表第一、二、三个(.*?)占据的内容
+在这里$1,$2,$3分别是正文、网址和日期
+3. 可以随意排列的，要是想“日期、正文、网址”就可以“$3sep$1sep$2” <a target="_blank" href="https://twitter.com/ultramarine471/status/1496514098997383175"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li><a href="http://t.co/ERQX8sW8ct" class="linkified" target="_blank">https://t.co/ERQX8sW8ct</a>
+
+什么叫珠玉在前啊。
+模式肯定要能支持自创和修改才是好模式，并且还要根据现有的情况进行修改，而不是搞正则这种智力闯关。 <a target="_blank" href="https://twitter.com/ultramarine471/status/1496508863885246470"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>一套正则匹配全套markup真的是智力竞技...... <a target="_blank" href="https://twitter.com/ultramarine471/status/1496508083492773890"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>没弄出来，妈的......
+（你们先用`&lt;li&gt;(.*?)&lt;/li&gt;`把主单元匹配出来，然后ctrl+shift+l复制到另一个文件里，然后再用各种办法试着筛一下） <a target="_blank" href="https://twitter.com/ultramarine471/status/1496507578007838723"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>会xpath提取的，或者hawk之类前端提取小工具的都可以用，这个是从网页的角度来看的，但今天我们用的就是正则表达式，比较麻烦但会了就很通用，并且学一点皮毛就可以了，简单的大家都会，复杂的大家都不会，所以要有自信。 <a target="_blank" href="https://twitter.com/ultramarine471/status/1496496144448638981"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>然后就是最有挑战性的一点，要把特定的内容从源文件纷繁的文段中筛选出来，这个时候就要了解下网页标签的概念，从网页中提取内容，可以分成“文段内找寻特定标签”和“（在找到的）标签内查看内容详情”两步。 <a href="http://t.co/ENytqEJhCr" class="linkified" target="_blank">https://t.co/ENytqEJhCr</a> <a target="_blank" href="https://twitter.com/ultramarine471/status/1496493308029321221"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>然后页面从头到尾拖动几下，确保完全加载（我这边量不大是可以一次加载好，太大了的话就得多拖几下）
+然后按f12，在最上面那个&lt;html&gt;处右键，然后选择复制元素 <a href="http://t.co/P3idSgvBic" class="linkified" target="_blank">https://t.co/P3idSgvBic</a> <a target="_blank" href="https://twitter.com/ultramarine471/status/1496487189940686852"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>首先我们用这个<a href="http://t.co/f188K1FBpk" class="linkified" target="_blank">https://t.co/f188K1FBpk</a>登录，这边我预设了该网站的可信性，有疑虑的可以先不用。
+我这边用我的来示范下。 <a href="http://t.co/aihUyt525V" class="linkified" target="_blank">https://t.co/aihUyt525V</a> <a target="_blank" href="https://twitter.com/ultramarine471/status/1496485583774011400"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>这个只是对推文的整理，主要为了回顾下过去的发言。
+想自己尝试的话也挺简单的，因为我不是专业学计算机的，所以下面就简单介绍下土方法。
+有更专业的方法也可以各显神通，按你们的习惯来。 <a target="_blank" href="https://twitter.com/ultramarine471/status/1496483006734815235"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>@Marinokaeri 太强了 <a target="_blank" href="https://twitter.com/ultramarine471/status/1496479743096545290"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>基本上没分析出当时在想什么。 <a href="http://t.co/c3zOFhfUrg" class="linkified" target="_blank">https://t.co/c3zOFhfUrg</a> <a target="_blank" href="https://twitter.com/ultramarine471/status/1496479610649088009"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>@toukorina 不是的，以前有诊断过来着，就是单纯的兴奋性低。我的体温也比正常人要低一些。 <a target="_blank" href="https://twitter.com/ultramarine471/status/1496433948645531650"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>我们唯一能做的，就是尽可能地顺从自己的身体，累了就休息；尽可能地多考虑自己居住地方的用火用电安全，不要边玩手机边做饭；还有就是不要觉得“自己都这么注意了为何还是这样”，因为我就是这样的，我这边是情绪一直高度不稳定、难以束缚，这也算是一种内耗的根源。 <a target="_blank" href="https://twitter.com/ultramarine471/status/1496431522768953346"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>这种事情根本避免不了，不是说你坚持锻炼就能不得癌症的（有人说坚持锻炼至少可以不猝死，你看现在不就猝死一个） <a target="_blank" href="https://twitter.com/ultramarine471/status/1496430844399222785"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li>一定要把锻炼当成玩，并且是小孩子意义上的玩，这样你就不会有什么指标、步数之类的压力，也不会觉得少锻炼一天比天塌了还难受。
+我之所以讲这个锻炼的事情，是因为在目前的时代人想要完全健康是一件很难的事，人都是稍不经意就得晚期癌或猝死，也很容易就抑郁、稍微一个冲动就自杀。 <a target="_blank" href="https://twitter.com/ultramarine471/status/1496428583581270020"> <span class="grey">Feb 23, 2022</span> <img src="img/extlink.png"></a></li>
+<li><a href="http://t.co/3dCRNL3JBF" class="linkified" target="_blank">https://t.co/3dCRNL3JBF</a>
