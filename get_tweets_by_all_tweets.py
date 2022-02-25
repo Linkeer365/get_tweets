@@ -96,23 +96,43 @@ for i in range(1,5):
     nodes=nodes+nodes_left
     if height1 == height2:
         print("bottom.")
+        nodes=nodes_left[::-1]
         break
+
+
 
 # nodes=list(set(nodes))
 lines=[]
 date_len=len("Jan 23, 2022")
 for node in nodes:
     text=node.text
-    href=node.find_element_by_xpath("./a[@target='_blank']").get_attribute("href")
+    href_nodes=node.find_elements_by_xpath("./a[@target='_blank' and @href]")
+    hrefs=[each.get_attribute("href") for each in href_nodes]
+    # print(hrefs)
+    assert 1<=len(hrefs)
+    href=""
+    other_text=""
+    for h in hrefs:
+        if "status" in h:
+            href=h
+        elif "t.co" in h:
+            tco_idx=h.find("t.co")
+            tco_last=h[tco_idx+5:]
+            # print(tco_last)
+            if not tco_last in text:
+                other_text="{} {}".format(other_text,h)
+    assert href!=""
     date=text.strip()[-date_len:]
     text=text.strip()[:-date_len]
+    text="{} {}".format(text,other_text)
+    text=text.strip()
     line="{}\t{}\t{}".format(text,date,href)
     # tup=(text,date,href)
     lines.append(line)
-    print("---")
-    print(text)
-    print(href)
-    print("---")
+    # print("---")
+    # print(text)
+    # print(href)
+    # print("---")
 
 lines_s="\n".join(lines)
 
