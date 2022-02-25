@@ -70,7 +70,7 @@ def translate(tco_link):
 
 def main():
     filedir="D://get_tweets//"
-    filenames=["ultramarine471_tweet_date_links","mutilated_catal_tweet_date_links"]
+    filenames=["mutilated_catal_tweet_date_links_modified","ultramarine471_tweet_date_links_modified",]
     # filepaths=[filedir+filename for filename in filenames]
     lines=[]
 
