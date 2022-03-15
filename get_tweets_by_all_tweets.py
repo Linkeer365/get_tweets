@@ -32,7 +32,7 @@ cursor=conn.cursor()
 username="ultramarine471"
 passwd="xm111737"
 # search_name=input("who you want:")
-search_name="mutilated_catal"
+search_name="ultramarine471"
 
 # cnt=cursor.execute("select count(*) from tw where u='{}'".format(search_name)).fetchall()[0][0]
 collected_links=[each[0] for each in cursor.execute("select l from tw where u='{}'".format(search_name)).fetchall()]
@@ -159,6 +159,9 @@ time.sleep(1)
 driver.find_element_by_xpath('//div[@id="load-user-btn"]').click()
 time.sleep(1)
 driver.find_element_by_xpath("//div[@id='tweets-btn']").click()
+
+# 有些推文比较长
+time.sleep(20)
 
 nodes=driver.find_elements_by_xpath("//div[@id='results']/ul/li")
 
