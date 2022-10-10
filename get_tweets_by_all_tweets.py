@@ -1,9 +1,11 @@
+# selenium <= 4.2.0 by https://pythoninoffice.com/fixing-attributeerror-webdriver-object-has-no-attribute-find_element_by_xpath/
 from typing import NamedTuple
 import selenium
 import re
 
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
 
 from selenium.webdriver.common.keys import Keys
 
@@ -30,7 +32,7 @@ conn=sqlite3.connect(db_path)
 cursor=conn.cursor()
 
 username="ultramarine471"
-passwd="xm111737"
+passwd="Flsy19990107#"
 # search_name=input("who you want:")
 search_name="ultramarine471"
 
@@ -43,7 +45,7 @@ collected_links=[each[0] for each in cursor.execute("select l from tw where u='{
 
 # visit=input("")
 
-firefox_path=r"C:\Program Files\Mozilla Firefox\geckodriver.exe"
+firefox_path=r"C:\Program Files (x86)\Mozilla Firefox\geckodriver.exe"
 options = Options()
 options.headless = True
 # options.headless = False
@@ -52,7 +54,8 @@ proxy="127.0.0.1:10087"
 
 options.add_argument(f"--proxy-server=http:{proxy}")
 
-driver=webdriver.Firefox(options=options,executable_path=firefox_path)
+path_as_service=Service(firefox_path)
+driver=webdriver.Firefox(options=options,service=path_as_service)
 driver.implicitly_wait(20)
 
 all_my_tweets_net="https://www.allmytweets.net/"
@@ -117,18 +120,22 @@ def get_date_from_link(link):
 
     # driver.implicitly_wait(15)
     div_class_str="css-901oao r-14j79pv r-37j5jr r-a023e6 r-16dba41 r-rjixqe r-1b7u577 r-bcqeeo r-qvutc0"
-    a_class_str="css-4rbku5 css-18t94o4 css-901oao css-16my406 r-14j79pv r-1loqt21 r-poiln3 r-bcqeeo r-qvutc0"
+    # a_class_str="css-4rbku5 css-18t94o4 css-901oao css-16my406 r-14j79pv r-1loqt21 r-poiln3 r-bcqeeo r-qvutc0"
+    a_class_str="css-4rbku5 css-18t94o4 css-901oao css-16my406 r-14j79pv r-1loqt21 r-xoduu5 r-1q142lx r-1w6e6rj r-poiln3 r-9aw3ui r-bcqeeo r-3s2u2q r-qvutc0"
     span_class_str="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0"
     try:
-        date_str=driver.find_element_by_xpath("//a[contains(@class,'{}')]/span[@class='{}']".format(a_class_str,span_class_str)).text
+        # date_str=driver.find_element(by=By.XPATH,value="//a[contains(@class,'{}')]/span[@class='{}']".format(a_class_str,span_class_str)).text
+        date_str=driver.find_element(by=By.XPATH,value="//a[contains(@class,'{}')]".format(a_class_str)).get_attribute("aria-label")
         # print ("date_str:", date_str)
     except Exception:
         date_str=""
+    print("\n\ndate-str:{}\n\n".format(date_str))
     format_date=get_format_date(date_str)
     return format_date
 
 # print(get_date_from_link("https://twitter.com/ultramarine471/status/1497271102241837058"))
 # sys.exit(0)
+
 def login():
     driver.get(all_my_tweets_net)
     time.sleep(1)
@@ -136,15 +143,15 @@ def login():
     # driver.find_element_by_xpath('//a[contains(@id,"redirect-link")]').click()
     # if "api.twitter.com" in driver.current_url:
     #     print("one jump success.")
-    driver.find_element_by_xpath('//input[contains(@id,"username_or_email")]').send_keys(username)
-    driver.find_element_by_xpath('//input[contains(@id,"password")]').send_keys(passwd)
-    driver.find_element_by_xpath('//input[contains(@id,"allow")]').click()
+    driver.find_element(by=By.XPATH,value='//input[contains(@id,"username_or_email")]').send_keys(username)
+    driver.find_element(by=By.XPATH,value='//input[contains(@id,"password")]').send_keys(passwd)
+    driver.find_element(by=By.XPATH,value='//input[contains(@id,"allow")]').click()
 
 
 login()
 
 
-node=driver.find_element_by_xpath('//input[contains(@placeholder,"Twitter User Name")]')
+node=driver.find_element(by=By.XPATH,value='//input[contains(@placeholder,"Twitter User Name")]')
 value=node.get_attribute("value")
 if value!="":
     node.send_keys(Keys.CONTROL,'a')
@@ -156,14 +163,15 @@ node.send_keys(search_name)
 
 time.sleep(1)
 
-driver.find_element_by_xpath('//div[@id="load-user-btn"]').click()
+# driver.find_element_by_xpath('//div[@id="load-user-btn"]').click()
+driver.find_element(by=By.XPATH,value='//div[@id="load-user-btn"]').click()
 time.sleep(1)
-driver.find_element_by_xpath("//div[@id='tweets-btn']").click()
+driver.find_element(by=By.XPATH,value="//div[@id='tweets-btn']").click()
 
 # 有些推文比较长
 time.sleep(20)
 
-nodes=driver.find_elements_by_xpath("//div[@id='results']/ul/li")
+nodes=driver.find_elements(by=By.XPATH,value="//div[@id='results']/ul/li")
 
 while 1:
     nodes_left=[]
@@ -172,7 +180,7 @@ while 1:
     height1=driver.execute_script("return document.body.scrollHeight;")
 
     driver.execute_script("arguments[0].scrollIntoView();",last_node)
-    nodes_left=driver.find_elements_by_xpath("//div[@id='results']/ul/li")
+    nodes_left=driver.find_elements(by=By.XPATH,value="//div[@id='results']/ul/li")
     first_node=nodes_left[0]
     print("last:",last_node.text)
     print("first:",first_node.text)
@@ -197,7 +205,7 @@ date_len=len("Jan 23, 2022")
 for idx,node in enumerate(nodes):
     text=node.text
     # print("text:",text)
-    href_nodes=node.find_elements_by_xpath("./a[@target='_blank' and @href]")
+    href_nodes=node.find_elements(by=By.XPATH,value="./a[@target='_blank' and @href]")
     hrefs=[each.get_attribute("href") for each in href_nodes]
     # print(hrefs)
     assert 1<=len(hrefs)
@@ -242,6 +250,8 @@ for idx,item in enumerate(items):
             text=text.replace(tco_link,real_link)
     # date-sub
     newdate=get_date_from_link(link)
+    print("\n\nnew date:",newdate)
+    print("\n\n")
     if newdate!="":
         date=newdate
     new_item=(search_name,text,date,link)
