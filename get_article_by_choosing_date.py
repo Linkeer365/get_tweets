@@ -8,10 +8,19 @@ conn=sqlite3.connect(db_path)
 cursor=conn.cursor()
 
 search_name="ultramarine471"
-# tweets_dates=[each for each in cursor.execute("select t,d from tw where u='{}'".format(search_name)).fetchall()]
-last_date=[each[0] for each in cursor.execute("select d from tw where u='{}'".format(search_name)).fetchall() if ":" in each[0]][-1]
-last_date=last_date.split(" ")[0]
+
+date_ask=input("which date(enter for default)\n(month-date like 0629):")
+if date_ask == "":
+    # tweets_dates=[each for each in cursor.execute("select t,d from tw where u='{}'".format(search_name)).fetchall()]
+    last_date=[each[0] for each in cursor.execute("select d from tw where u='{}'".format(search_name)).fetchall() if ":" in each[0]][-1]
+    last_date=last_date.split(" ")[0]
+else:
+    assert len(date_ask) == 4
+    date_ask_str="{}-{}".format(date_ask[0:2],date_ask[2:4])
+    last_date=[each[0] for each in cursor.execute("select d from tw where u='{}' and d like '%{}%'".format(search_name,date_ask_str)).fetchall() if ":" in each[0]][-1]
+    last_date=last_date.split(" ")[0]  
 print("当前日期：",last_date)
+
 # os._exit(0)
 
 query_str="select t,d,l from tw where u='ultramarine471' and d like '%{}%'"
@@ -45,9 +54,6 @@ def make_article():
     global last_date
     while True:
         ask=input("go on press enter or n (go 2 for 2n), go back press b(back 2 for 2b), for sure press y:\t")
-        
-        os.system("cls")
-
         print("（注意：选择到文章开头的那天）")
         if ask == "n":
             cur_date=date_forward(last_date, 1)
@@ -67,6 +73,9 @@ def make_article():
         # print(query_str,(sql_date_patt.format(cur_date),))
         # print(query_str,"%"+cur_date+"%")
         cur_packs=cursor.execute(query_str.format(cur_date)).fetchall()
+
+        os.system("cls")
+
         if cur_packs == []:
             print("此日无任何推文")
         
@@ -102,6 +111,8 @@ def make_article():
         if "b" == ask:
             cnt-=1
             continue
+        if "f" == ask:
+            break
         cnt+=1
 
     # for num,pack in enumerate(twoday_pack,1):
@@ -118,17 +129,23 @@ def make_article():
 
 
     dir_path_patt="D:\Blogs\{}\source\_posts"
-    project=input("tm or cl:\t")
-    if project == "tm":
-        article_dir=dir_path_patt.format("Linkeer365TinyMoment2")
-    elif project == "cl":
-        article_dir=dir_path_patt.format("Linkeer365ColorfulLife3")
+    
+    while True:
+        project=input("tm or cl:\t")
+        if project == "tm":
+            article_dir=dir_path_patt.format("Linkeer365TinyMoment2")
+            break
+        elif project == "cl":
+            article_dir=dir_path_patt.format("Linkeer365ColorfulLife3")
+            break
 
     tweets=[each[0] for each in article_pack]
     atc_date=article_pack[0][1]+":00"
 
     while True:
         title=input("文章标题：")
+        if title == "":
+            continue
         article_path=article_dir+os.sep+title+".md"
         if os.path.exists(article_path):
             print("标题起重名了，重新起一个！")

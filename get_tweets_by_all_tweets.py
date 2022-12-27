@@ -47,8 +47,8 @@ collected_links=[each[0] for each in cursor.execute("select l from tw where u='{
 
 firefox_path=r"C:\Program Files (x86)\Mozilla Firefox\geckodriver.exe"
 options = Options()
-options.headless = True
-# options.headless = False
+# options.headless = True
+options.headless = False
 
 proxy="127.0.0.1:10087"
 
@@ -140,13 +140,24 @@ def login():
     driver.get(all_my_tweets_net)
     time.sleep(1)
     driver.get(all_my_tweets_net+'/redirect.php')
+    time.sleep(3)
     # driver.find_element_by_xpath('//a[contains(@id,"redirect-link")]').click()
     # if "api.twitter.com" in driver.current_url:
     #     print("one jump success.")
-    driver.find_element(by=By.XPATH,value='//input[contains(@id,"username_or_email")]').send_keys(username)
-    driver.find_element(by=By.XPATH,value='//input[contains(@id,"password")]').send_keys(passwd)
-    driver.find_element(by=By.XPATH,value='//input[contains(@id,"allow")]').click()
-
+    if not "api" in driver.current_url:
+        driver.find_element(by=By.XPATH,value='//input[contains(@id,"username_or_email")]').send_keys(username)
+        driver.find_element(by=By.XPATH,value='//input[contains(@id,"password")]').send_keys(passwd)
+        driver.find_element(by=By.XPATH,value='//input[contains(@id,"allow")]').click()
+    elif "api" in driver.current_url:
+        driver.find_element(by=By.XPATH,value='//input[contains(@id,"allow")]').click()
+        time.sleep(1)
+        driver.find_element(by=By.XPATH,value="//input[@autocomplete='username']").send_keys(username)
+        time.sleep(1)
+        driver.find_element(by=By.XPATH,value="//input[@autocomplete='username']").send_keys(Keys.ENTER)
+        time.sleep(1)
+        driver.find_element(by=By.XPATH,value="//input[@autocomplete='current-password']").send_keys(passwd)
+        time.sleep(1)
+        driver.find_element(by=By.XPATH,value="//input[@autocomplete='current-password']").send_keys(Keys.ENTER)
 
 login()
 
